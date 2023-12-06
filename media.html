@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Marvel Prone</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+      h1 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      body {
+        background-image: url(imgs/bbfb.jpg);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .green {
+        background-color: rgb(150, 182, 83);
+        margin: 10%;
+      }
+
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-top ">
+      <div class="w3-bar w3-black w3-card-2">
+        <div class="w3-dropdown-hover w3-hide-medium w3-hide-large">
+          <button class="w3-padding-large w3-button" title="More">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="index.html#bio" class="w3-bar-item w3-button">BIO</a>
+            <a href="index.html#shows" class="w3-bar-item w3-button">SHOWS</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button">CONTACT</a>
+            <a href="discography.html" class="w3-bar-item w3-button">DISCOGRAPHY</a>
+            <a href="media.html" class="w3-bar-item w3-button">PHOTOS</a>
+            <a href="videos.html" class="w3-bar-item w3-button">VIDEOS</a>
+            <a href="our-story.html" class="w3-bar-item w3-button">OUR STORY</a>
+          </div>
+        </div>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+        <a href="index.html#bio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BIO</a>
+        <a href="index.html#shows" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOWS</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="discography.html" class="w3-bar-item w3-button">DISCOGRAPHY</a>
+            <a href="media.html" class="w3-bar-item w3-button">PHOTOS</a>
+            <a href="videos.html" class="w3-bar-item w3-button">VIDEOS</a>
+            <a href="our-story.html" class="w3-bar-item w3-button">OUR STORY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <h1 class="w3-center w3-round green">G A L L E R Y</h1>
+    <!-- Portfolio Section -->
+    <div class="w3-padding-16 w3-content" id="photos">
+      <!--Slideshow Section-->
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="imgs/solarfest2017(1).jpg" alt="LA" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2017(2).jpg" alt="Sailboat" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2017(3).jpg" alt="Band" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2017(4).jpg" alt="San Francisco" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2017(6).jpg" alt="Sailboat" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2019.jpg" alt="Band" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2019(1).jpg" alt="San Francisco" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2019(2).jpg" alt="LA" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2019(3).jpg" alt="Sailboat" style="width:100%">
+        <img class="mySlides" src="imgs/solarfest2019(4).jpg" alt="Band" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = x.length
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+      </script>
+      <!--End of Slideshow Section-->
+    </div>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="imgs/popupportsmouth2020.jpg" alt="weeding" style="width:100%">
+        <img src="imgs/marvelProneLineup2021.jpg" alt="rocks" style="width:100%">
+        <img src="imgs/flightCoffee.jpg" alt="sailboat" style="width:100%">
+        <img src="imgs/drummer-ed.jpg" alt="sailboat" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="imgs/dave-young.jpg" alt="underwater" style="width:100%">
+        <img src="imgs/dave-origin.jpg" alt="chef" style="width:100%">
+        <img src="imgs/being-there.jpg" alt="wedding" style="width:100%">
+        <img src="imgs/library.jpg" alt="New York" style="width:100%">
+      </div>
+      <!-- End photo grid -->
+    </div>
+    <!-- End Portfolio Section -->
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-white w3-xlarge">
+      <a href="https://www.facebook.com/marvelprone/">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjx8a3etqOCAxXykIkEHY2bBI0QFnoECBIQAQ&url=https%3A%2F%2Fopen.spotify.com%2Fartist%2F4ISyDjIvaiZrZFoonPpwoT&usg=AOvVaw1hhkpFNhteXOxy7rlK7-km&opi=89978449">
+        <i class="fa fa-brands fa-spotify"></i>
+      </a>
+      <a href="https://www.instagram.com/marvelprone">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+      </p>
+    </footer>
+  </body>
+</html>

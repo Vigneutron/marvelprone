@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <title>Marvel Prone</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+      ol,
+      p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      body {
+        background-image: url(imgs/bbfb.jpg);
+      }
+
+      footer {
+        position: absolute;
+      }
+
+      h2 {
+        text-shadow: 1px 1px 0 #3e3e3e;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #bio {
+        background-color: rgb(150, 182, 83);
+        margin: 10%;
+      }
+
+      .green {
+        background-color: rgb(150, 182, 83);
+        margin: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-top ">
+      <div class="w3-bar w3-black w3-card-2">
+        <div class="w3-dropdown-hover w3-hide-medium w3-hide-large">
+          <button class="w3-padding-large w3-button" title="More">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="index.html#bio" class="w3-bar-item w3-button">BIO</a>
+            <a href="index.html#shows" class="w3-bar-item w3-button">SHOWS</a>
+            <a href="index.html#contact" class="w3-bar-item w3-button">CONTACT</a>
+            <a href="discography.html" class="w3-bar-item w3-button">DISCOGRAPHY</a>
+            <a href="media.html" class="w3-bar-item w3-button">PHOTOS</a>
+            <a href="videos.html" class="w3-bar-item w3-button">VIDEOS</a>
+            <a href="our-story.html" class="w3-bar-item w3-button">OUR STORY</a>
+          </div>
+        </div>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+        <a href="index.html#bio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BIO</a>
+        <a href="index.html#shows" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOWS</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="discography.html" class="w3-bar-item w3-button">DISCOGRAPHY</a>
+            <a href="media.html" class="w3-bar-item w3-button">PHOTOS</a>
+            <a href="videos.html" class="w3-bar-item w3-button">VIDEOS</a>
+            <a href="our-story.html" class="w3-bar-item w3-button">OUR STORY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <h1 class="w3-center w3-round green">D I S C O G R A P H Y</h1>
+    <div class="w3-padding-16 w3-content" id="photos">
+      <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:150px">
+        <h5 class="w3-bar-item">Menu</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'London')">Moonlightning</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Paris')">She Hits Me</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Tokyo')">Tres Hombres</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, '11:22')">11:22</button>
+      </div>
+      <div style="margin-left:150px">
+        <div class="w3-padding w3-white">Click on an album title for more info</div>
+        <div id="London" class="w3-container w3-black city" style="display:none">
+          <img src="imgs/moonlightning-cover.jpg" class="" alt="" style="width:250px">
+          <h2>Moonlightning</h2>
+          <p>2016</p>
+          <ol>
+            <li>DAVE, The Supermoon!</li>
+            <li>Nocturnal Life</li>
+            <li>Beauty Blazing Fury</li>
+            <li>After a While</li>
+            <li>Pufferbelly</li>
+            <li>Twirl</li>
+            <li>Diamond Eyes</li>
+            <li>Moonlightning</li>
+          </ol>
+        </div>
+        <div id="Paris" class="w3-container city w3-black" style="display:none">
+          <img src="imgs/shehitsme.jpg" class="" alt="" style="width:250px">
+          <h2>She Hits Me</h2>
+          <p>2020</p>
+          <ol>
+            <li>Blue-Eyes, White Dragon</li>
+            <li>Cuffed</li>
+            <li>Strike-through</li>
+            <li>Madison</li>
+            <li>So Be It</li>
+            <li>She Hits Me</li>
+            <li>Little Signs</li>
+            <li>Scrolling Through Your Feed</li>
+            <li>Last May</li>
+            <li>Being-there</li>
+          </ol>
+        </div>
+        <div id="Tokyo" class="w3-container w3-black city" style="display:none">
+          <img src="imgs/treshombres-cover2.jpg" class="" alt="" style="width:250px">
+          <h2>Tres Hombres</h2>
+          <p>2022</p>
+          <ol>
+            <li>Intro</li>
+            <li>Tres Hombres</li>
+            <li>Hair Off Of A Canine's Back</li>
+            <li>Hold Me While I'm Burning</li>
+            <li>Deadhang</li>
+            <li>Misbehave</li>
+            <li>Stasis Tube</li>
+            <li>My White Flag</li>
+            <li>Today Is Not Self-Hatred Day</li>
+            <li>Outro</li>
+          </ol>
+        </div>
+        <div id="11:22" class="w3-container w3-black city" style="display:none">
+          <img src="imgs/1122-cover.JPG" class="" alt="" style="width:250px">
+          <h2>11:22</h2>
+          <p>2022</p>
+          <ol>
+            <li>Ivory</li>
+            <li>Emma (uWu)</li>
+            <li>11:22</li>
+            <li>Broke My Lip</li>
+            <li>Sterling</li>
+            <li>Shot Me Down</li>
+            <li>Eternal Return of The Same Dream</li>
+          </ol>
+        </div>
+      </div>
+      <script>
+        function openCity(evt, cityName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " w3-red";
+        }
+      </script>
+    </div>
+    <!-- End Page Content -->
+    <!-- Footer removed -->
+    
+  </body>
+</html>
